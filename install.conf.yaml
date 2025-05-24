@@ -1,12 +1,24 @@
+#To run this file: dotbot -c install.conf.yaml 
 - defaults:
-    link:
-      relink: true
+      link:
+          relink: true
 
+#?
 - clean: ['~']
 
 - link:
-    ~/.zshrc: zshrc
-  
-#- create:
+      #   LINK_PATH: REAL_PATH (if omitted, it will be the link file
+      #     without the dot saved in this directory
+      ~/.zshrc:
+      ~/.zshenv:
+      ~/.gitconfig:
+      ~/.config/bat:
 
+#- create: #For creating directories
+#    - ~/Folder
+
+# For running commands
 - shell:
+      - command: ./brew_setup.zsh
+        stdout: true  #to allow output
+        stderr: true  #to show eventual errors
