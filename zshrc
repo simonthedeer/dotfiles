@@ -25,7 +25,7 @@ alias gc='git commit'
 alias gp='git push'
 alias ssh3='ssh mitware@146.0.32.204'
 alias ssh2='ssh mitware@mitware-server'
-alias bm="~/dotfiles/scripts/backup_mongo.sh"
+alias bmc="~/dotfiles/scripts/backup_script_cube.sh"
 
 # define a named directory to use ~icloud instead of the long path
 hash -d icloud="$HOME/Library/Mobile Documents/com~apple~CloudDocs"
